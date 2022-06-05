@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:pet/constants/colors.dart';
-import 'package:pet/home/widget/Food_list.dart';
+import 'package:pet/home/widget/food_list.dart';
 import 'package:pet/home/widget/restaurant_widget.dart';
 import 'package:pet/models/restaurent.dart';
 import 'package:pet/widgets/CustomAppBar.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-import 'widget/FoodListView.dart';
+import 'widget/food_list_view.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({Key? key}) : super(key: key);

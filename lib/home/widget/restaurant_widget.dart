@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:pet/models/restaurent.dart';
 
-import 'RestaurantDescription.dart';
-import 'RestaurantInfos.dart';
+import 'restaurent_description.dart';
+import 'restaurent_infos.dart';
 
 class RestaurantInfo extends StatelessWidget {
   RestaurantInfo({Key? key}) : super(key: key);

@@ -5,9 +5,12 @@ class CustomAppBar extends StatelessWidget {
   final IconData rightIcon;
   final Function? leftCallback;
 
-  const CustomAppBar(this.leftIcon, this.rightIcon,
-      {this.leftCallback, Key? key})
-      : super(key: key);
+  const CustomAppBar(
+    this.leftIcon,
+    this.rightIcon, {
+    this.leftCallback,
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,12 +21,14 @@ class CustomAppBar extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             GestureDetector(
-              onTap: leftCallback != null ? () => leftCallback : null,
+              onTap: leftCallback != null ? () => leftCallback!() : null,
               child: _buildIcon(leftIcon),
             ),
             _buildIcon(rightIcon)
           ],
-        ));
+        )
+      );
+      
   }
 }
 
